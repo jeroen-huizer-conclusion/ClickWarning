@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="ClickWarning.widget.ClickWarning_Contextable" needsEntityContext="true" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ widget.xsd">
+    <name>ClickWarning_Contextable</name>
+    <description>Show a popup when clicking a button.</description>
+    <icon></icon>
+    <properties>
+
+         <property key="buttonName" type="string" defaultValue="" required="true"> 
+            <caption>Button name</caption>
+            <category>General</category>
+            <description>The mx-name of the button that should be replaced. (do not include mx-name-)</description>
+        </property>           
+
+        <property key="alertMessageAttribute" type="attribute" required="true"> 
+            <caption>Alert message</caption>
+            <category>General</category>
+            <description>The attribute that contains the alert message.</description>
+            <attributeTypes>
+                <attributeType name="String"/>
+            </attributeTypes>
+        </property>           
+
+        <property key="okCaptionAttribute" type="attribute" required="true"> 
+            <caption>Proceed caption</caption>
+            <category>General</category>
+            <description>The attribute that contains the caption of the proceed button.</description>
+            <attributeTypes>
+                <attributeType name="String"/>
+            </attributeTypes>
+        </property>   
+
+        <property key="cancelCaptionAttribute" type="attribute" required="true"> 
+            <caption>Cancel caption</caption>
+            <category>General</category>
+            <description>The attribute that contains the caption of the cancel button.</description>
+            <attributeTypes>
+                <attributeType name="String"/>
+            </attributeTypes>
+        </property>   
+
+    </properties>
+</widget>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="ClickWarning.widget.ClickWarning" needsEntityContext="false" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ widget.xsd">
+    <name>ClickWarning</name>
+    <description>Show a popup when clicking a button.</description>
+    <icon></icon>
+    <properties>
+
+         <property key="buttonName" type="string" defaultValue="" required="true"> 
+            <caption>Button name</caption>
+            <category>General</category>
+            <description>The mx-name of the button that should be replaced. (do not include mx-name-)</description>
+        </property>           
+
+        <property key="alertMessage" type="string" defaultValue="" required="true">  
+            <caption>Alert message</caption>
+            <category>General</category>
+            <description>The message to display when clicking the button.</description>
+        </property>
+          
+        <property key="okCaption" type="string" defaultValue="Ok" required="true">  
+            <caption>Proceed caption</caption>
+            <category>General</category>
+            <description>Caption of the process button.</description>
+        </property>  
+
+        <property key="cancelCaption" type="string" defaultValue="Cancel" required="true">  
+            <caption>Cancel caption</caption>
+            <category>General</category>
+            <description>Caption of the cancel button.</description>
+        </property>  
+
+    </properties>
+</widget>
